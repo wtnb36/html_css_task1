@@ -1,28 +1,30 @@
 *{
   margin:0;
   padding:0; 
+  box-sizing:border-box;
 }
+
 header, footer{
-  background-color:bisque;
+  background-color:darkslategray;
   width:100%;
-  height:100px;
 }
 
 .title{
   display:flex;
   width:100%;
-  height:50px;
+  height:50%;
 }
 
 .catch_copy{
   width:70%;
   margin-left:10px;
+  color:white;
 }
 
 .tel{
-  justify-content:flex-end;
+  color:white;
+  font-size:20px;
 }
-
 
 .top_menu{
   width:100%;
@@ -35,6 +37,17 @@ header, footer{
   display:flex;
   list-style:none;
   justify-content:center;
+  color:white;
+}
+
+.menu_list a{
+  text-decoration:none;
+  color:white;
+  font-size:20px;
+}
+
+.menu_list a:hover{
+  color:blue;
 }
 
 .menu_item{
@@ -42,10 +55,8 @@ header, footer{
 }
 
 main{
-  background-color:darkgrey;
+  background-color:#E6FFE9;
 }
-
-
 
 .top_img{
   width:100%;
@@ -56,91 +67,224 @@ main{
   background-position:center;
 }
 
-.contents1, .contents2, .contents3, .contents4, .contents5, .form{
-  margin:30px auto;
-  width:60%;
-  height:300px;
+.pet_info, .video, .greeting, .topics, .access, .form{
+  margin:50px auto;
+  width:80%;
+  height:auto;
   background-color:cornsilk;
 }
 
-.contents_title{
+.form_field{
+  margin:0 auto;
+  width:60%;
+  background-color:cornsilk;
+}
+
+.contents_title, .form_title{
   margin:0 auto;
   text-align:center;
   background-color:darkslategray;
+  color:white;
 }
 
-.contents1_main, .contents5_main{
+.pet_info_main, .access_main{
   display:flex;
   margin:0 auto;
 }
 
-.contents1_img2{
-  margin:0 auto;
+.pet_img_field{
+  width:20%;
 }
 
-.contents2_main1, .contents2_main2{
-  display:flex;
-  margin:0 auto;
+.pet_info_main{
+  justify-content:space-between;
 }
 
-.contents2_img2, .contents2_img3{
-  width:60%;
-}
-
-.contents2_img1, .contents2_img4{
-  width:40%;
-}
-
-.contents2_img1{
+.pet_img{
   width:100%;
-  height:100%;
-  background-image:url(img/cat_logo.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position:center;
+  height:auto;
 }
 
-.contents3_main{
-  display:flex;
-  flex-wrap:wrap;
-}
-
-.contents4{
+.pet_img_text{
   text-align:center;
+  margin-top:15px;
+  margin-bottom:15px;
 }
 
-.contents5_text{
-  width:40%;
+.video_main1, .video_main2{
+  display:flex;
+  margin:0 auto;
+  width:100%;
+  height:50%;
+  align-items:center;
 }
 
-.contents5_map{
+.video_text{
   width:60%;
 }
 
-.form{
+.video_main2 p{
+  color:red;
+  text-decoration:underline;
+  font-size:64px;
   text-align:center;
+}
+
+.video_img, .video_youtube{
+  width:40%;
+  height:50%;
+}
+
+.topics{
+  text-align:center;
+}
+
+.access_text{
+  width:40%;
+  text-align:center;
+  margin:30px auto;
+  line-height: 3em;
+}
+
+.access_map{
+  width:60%;
 }
 
 .form_item{
   display:flex;
   margin:10px auto;
-  justify-content:center;
+  text-align:center;
+  align-items:center;
 }
 
 .form_item_label{
-  margin:10px 30px;
+  width:40%;
 }
 
+.form_item_input_field{
+  width:60%;
+}
+
+.btn_field{
+  width:100%;
+  text-align:center;
+  padding-bottom:10px;
+}
+
+.form_item_input{
+  width:90%;
+}
+
+.form_item_input_textarea{
+  width:90%;
+  height:100%;
+}
+
+.form_btn{
+  text-align:center;
+}
+  
 .bottom_menu{
   display:flex;
-  flex-wrap:wrap;
-  width:100%
+  width:100%;
+  align-items:center;
 }
 
 .bottom_menu .menu_list{
   flex-wrap:wrap;
 }
 
+.bottom_menu_item{
+  padding:2px 3px;
+}
+
+.submit_btn{
+  width:100px;
+  background-color:green;
+  color:white;
+}
+
+.nav_menu{
+  width:90%;
+}
+
 .indention{
   width:100%;
+}
+
+.copy_right{
+  width:100%;
+  text-align:center;
+  margin-top:10px;
+  color:white;
+  font-size:16px;
+}
+
+.adjustment_box{
+  background-color:#E6FFE9;
+  height:30px;
+}
+
+.text{
+  overflow-wrap:normal;
+}
+
+iframe {
+  aspect-ratio:16/9;
+}
+
+@media screen and (max-width:1024px){
+  .top_menu, .tel{
+    display:none;
+  }
+
+
+  .title{
+    align-items:center;
+  }
+
+  .catch_copy{
+    text-align:center;
+  }
+
+  .pet_info, .video, .greeting, .topics, .access, .form{
+    width:100%;
+    height:auto;
+  }
+
+  .pet_info_main{
+    display:block;
+  }
+
+  .pet_img_field{
+    width:100%;
+    height:auto;
+  }
+
+  .video_main2{
+    flex-direction:column-reverse;
+  }
+
+  .video_main2 div{
+    width:100%;
+  }
+
+  .access_main{
+    flex-direction:column-reverse;
+  }
+
+  .access_main div{
+    width:100%;
+  }
+
+  .bottom_menu .logo{
+    width:80%;
+  }
+  .menu_list{
+    flex-flow:column;
+  }
+
+  .copy_right span{
+    display:none;
+  }
 }

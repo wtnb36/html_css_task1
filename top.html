@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>HTMLCSS講習課題</title>
+  <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+  <title>HTMLCSS</title>
   <link rel="stylesheet" href="stylesheet.css" />
 </head>
 
@@ -11,12 +12,16 @@
   <header>
     <div class=title>
       <div class="logo">
-        <img src="img/cat_logo.webp" width="50px" height="50px">
+        <picture>
+          <source srcset="img/IMG_2507.JPG" media="(max-width:1024px)">
+          <img src="img/IMG_2507.JPG" width="100px" height="100px">
+        </picture>
       </div>
       <div class="catch_copy">
-        <p>我が家のペット</p>
+        <h1>我が家のペット</h1>
       </div>
       <div class="tel">
+
         <p>000-0000-0000</p>
       </div>
     </div>
@@ -24,126 +29,197 @@
     <div class="top_menu">
       <nav class="menu">
         <ul class="menu_list">
-          <li class="menu_item">menu1</li>
-          <li class="menu_item">menu2</li>
-          <li class="menu_item">menu3</li>
-          <li class="menu_item">menu4</li>
-          <li class="menu_item">menu5</li>
+          <li class="menu_item"><a href="#pet_info">ペット情報</a></li>
+          <li class="menu_item"><a href="#video">video</a></li>
+          <li class="menu_item"><a href="#greeting">ごあいさつ</a></li>
+          <li class="menu_item"><a href="#topics">新着情報</a></li>
+          <li class="menu_item"><a href="#access">アクセス</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-
-
     <div class="top_img"></div>
-
-    <div class="contents1">
-      <div class="contents_title">
-        <p>コンテンツ1</p>
-      </div>
-      <div class="contents1_main">
-        <div class="contents1_img1">
-          <img src="img/cat_logo.webp" width="100px" height="100px">
-          <p>text</p>
+    <div class="pet_info_field">
+      <section class="pet_info" id="pet_info">
+        <div class="contents_title">
+          <h3>ペット情報</h3>
         </div>
-        <div class="contents1_img2">
-          <img src="img/cat_logo.webp" width="100px" height="100px">
-          <p>text</p>
+        <div class="pet_info_main">
+          <div class="pet_img_field">
+            <picture>
+              <source srcset="img/IMG_1703.jpg" media="(max-width:1024px)">
+              <img src="img/IMG_1703.jpg" class="pet_img">
+            </picture>
+            <p class="pet_img_text">
+              高校生の時ペットショップで一目惚れして購入したネコ
+            </p>
+          </div>
+          <div class="pet_img_field">
+            <picture>
+              <source srcset="img/IMG_1758.jpg" media="(max-width:1024px)">
+              <img src="img/IMG_1758.jpg" class="pet_img">
+            </picture>
+            <p class="pet_img_text">
+              ゲームセンターで拾ったネコ
+            </p>
+          </div>
+          <div class="pet_img_field">
+            <picture>
+              <source srcset="img/IMG_2151.jpg" media="(max-width:1024px)">
+              <img src="img/IMG_2151.jpg" class="pet_img">
+            </picture>
+            <p class="pet_img_text">
+              家に居ついた野良猫
+            </p>
+          </div>
         </div>
-        <div class="contents1_img3">
-          <img src="img/cat_logo.webp" width="100px" height="100px">
-          <p>text</p>
-        </div>
-      </div>
+      </section>
     </div>
 
-    <div class="contents2">
-      <div class="contents_title">
-        <p>コンテンツ2</p>
-      </div>
-      <div class="contents2_main1">
-        <div class="contents2_img1"></div>
-        <div class="contents2_img2">
-          <p>text</p>
+    <div class="video_field">
+      <section class="video" id="video">
+        <div class="contents_title">
+          <h3>ビデオ</h3>
         </div>
-      </div>
-      <div class="contents2_main2">
-        <div class="contents2_img3">
-          <p>text</p>
+        <div class="video_main1">
+          <div class="video_img">
+            <picture>
+              <source srcset="img/cat_logo.webp" media="(max-width:1024px)">
+              <img src="img/cat_logo.webp" width="100%">
+            </picture>
+          </div>
+          <div class="video_text">
+            <p>
+              「吾輩は猫である」は雜誌ホトヽギスに連載した續き物である。固より纒つた話の筋を讀ませる普通の小説ではないから、どこで切つて一册としても興味の上に於て左したる影響のあらう筈がない。然し自分の考ではもう少し書いた上でと思つて居たが、書肆が頻りに催促をするのと、多忙で意の如く稿を續ぐ餘暇がないので［＃「ないので」は底本では「なので」］、差し當り是丈を出版する事にした。
+              　自分が既に雜誌へ出したものを再び單行本の體裁として公にする以上は、之を公にする丈の價値があると云ふ意味に解釋されるかも知れぬ。「吾輩は猫である」が果してそれ丈の價値があるかないかは著者の分として言ふべき限りでないと思ふ。たゞ自分の書いたものが自分の思ふ樣な體裁で世の中へ出るのは、内容の價値如何に關らず、自分丈は嬉しい感じがする。自分に對しては此事實が出版を促がすに充分な動機である。
+              　此書を公けにするに就て中村不折氏は數葉の挿畫をかいてくれた。橋口五葉氏は表紙其他の模樣を意匠してくれた。兩君の御蔭に因つて文章以外に一種の趣味を添へ得たるは余の深く徳とする所である。［＃「。」は底本では「、」］
+              　自分が今迄「吾輩は猫である」を草しつゝあつた際、一面識もない人が時々書信又は繪端書抔をわざ／＼寄せて意外の褒辭を賜はつた事がある。自分が書いたものが斯んな見ず知らずの人から同情を受けて居ると云ふ事を發見するのは非常に難有い。今出版の機を利用して是等の諸君に向つて一言感謝の意を表する。
+              　此書は趣向もなく、搆造もなく、尾頭の心元なき海鼠の樣な文章であるから、たとひ此一卷で消えてなくなつた所で一向差し支へはない。又實際消えてなくなるかも知れん。然し將來忙中に閑を偸んで硯の塵を吹く機會があれは再び稿を續ぐ積である。猫が生きて居る間は――猫が丈夫で居る間は――猫が氣が向くときは――余も亦筆を執らねばならぬ。
+            </p>
+          </div>
         </div>
-        <div class="contents2_img4">
-          <a href="http://www.google.co.jp/">Google</a>
+        <div class="video_main2">
+          <div class="video_text">
+            <p>無断転載ごめんなさい。</p>
+          </div>
+          <div class="video_youtube">
+            <iframe width=100% height=100% src="https://www.youtube.com/embed/lxc5GjABrSw" title="YouTube video player"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
         </div>
-      </div>
+    </div>
     </div>
 
-    <div class="contents3">
-      <div class="contents_title">
-        <p>弊社のこだわり</p>
-      </div>
-      <div class="contents3_main">
-        <div class="contents3_img1">
-          <img src="img/cat_logo.webp" width="100px" height="100px">
+    <div class="greeting_field">
+      <section class="greeting" id="greeting">
+        <div class="contents_title">
+          <h3>ごあいさつ</h3>
         </div>
-        <div class="contents3_img2">
-          <p>text</p>
+        <div class="greeting_main">
+          <p>
+            <img src="img/cat_logo.webp" width=15% height="auto" align="left">
+            吾輩は猫である。名前はまだ無い。どこで生まれたか頓と見當がつかぬ。何ても暗薄いじめじめした所でニャー／＼泣いて居た事丈は記憶して居る。
+            吾輩はこゝで始めて人間といふものを見た。然もあとで聞くとそれは書生といふ人間で一番獰惡な種族であつたさうだ。
+            此書生といふのは時々我々を捕へて煮て食ふといふ話である。然し其當時は何といふ考もなかつたから別段恐しいとも思はなかつた。
+            但彼の掌に載せられてスーと持ち上げられた時何だかフハフハした感じが有つた許りである。掌の上で少し落ち付いて書生の顏を見たが所謂人間といふものゝ見始であらう。
+            此の時妙なものだと思つた感じが今でも殘つて居る。第一毛を以て裝飾されべき筈の顏がつる／＼して丸で藥罐だ。
+            其後猫にも大分逢つたがこんな片輪には一度も出會はした事がない。加之顏の眞中が餘りに突起して居る。そうして其穴の中から時々ぷう／＼と烟を吹く。
+            どうも咽せぽくて實に弱つた。是が人間の飮む烟草といふものである事は漸く此頃知つた。
+            此書生の掌の裏でしばらくはよい心持に坐つて居つたが、暫くすると非常な速力で運轉し始めた。書生が動くのか自分丈が動くのか分らないが無暗に眼が廻る。
+            胸が惡くなる。到底助からないと思つて居ると、どさりと音がして眼から火が出た。夫迄は記憶して居るがあとは何の事やらいくら考へ出さうとしても分らない。
+            ふと氣が付いて見ると書生は居ない。澤山居つた兄弟が一疋も見えぬ。肝心の母親さへ姿を隱して仕舞つた。其上今迄の所とは違つて無暗に明るい。
+            眼を明いて居られぬ位だ。果てな何でも容子が可笑いと、のそ／＼這ひ出して見ると非常に痛い。吾輩は藁の上から急に笹原の中へ棄てられたのである。
+          </p>
         </div>
-      </div>
+      </section>
     </div>
 
-    <div class="contents4">
-      <div class="contents_title">
-        <p>新着情報</p>
-      </div>
-      <div class="contents4_main">テキスト</div>
-      <div class="contents4_main">テキスト</div>
-      <div class="contents4_main">テキスト</div>
-      <div class="contents4_main">テキスト</div>
-    </div>
-
-    <div class="contents5">
-      <div class="contents_title">
-        <p>会社概要</p>
-      </div>
-      <div class="contents5_main">
-        <div class="contents5_text">
-          <p>テキスト</p>
+    <div class="topics_field">
+      <section class="topics" id="topics">
+        <div class="contents_title">
+          <h3>新着情報</h3>
         </div>
-        <div class="contents5_map">
-          <p>googlemap</p>
+        <div class="topic_title">家に居ついた野良猫</div>
+        <div class="topic_title">ゲームセンターで拾ったネコ</div>
+        <div class="topic_title">初めて買ったネコ</div>
+        <div class="topic_title">初めて拾ったネコ</div>
+      </section>
+    </div>
+
+    <div class="acces_field">
+      <section class="access" id="access">
+        <div class="contents_title">
+          <h3>アクセス</h3>
         </div>
-      </div>
+        <div class="access_main">
+          <div class="access_text">
+            <h3>オブジェクティブコード</h3>
+            <p>〒107-0051<br>
+              東京都港区元赤坂1-1-16<br>
+              東京元赤坂ビル3F<br>
+              東京メトロ 丸ノ内線<br>
+              赤坂見附駅『B出口』より徒歩2分<br>
+              営業時間 10:00～19:00<br>
+              電話番号 <a href="tel:03-6441-3935">03-6441-3935</a>
+            </p>
+          </div>
+          <div class="access_map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.962531041259!2d139.73225211559404!3d35.67792458019508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c7dd5928b1f%3A0x7817b82a0d541edd!2z44Kq44OW44K444Kn44Kv44OG44Kj44OW44Kz44O844OJ!5e0!3m2!1sja!2sjp!4v1638258997215!5m2!1sja!2sjp"
+              width=100% height=100% style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <div class="form">
-      <div class="form-title">
-        <p>お問い合わせ</p>
-      </div>
-      <div class="form_item">
-        <p class="form_item_label">名前</p>
-        <input type="text" class="form_item_input" placeholder="例）山田太郎">
-      </div>
-      <div class="form_item">
-        <p class="form_item_label">メールアドレス</p>
-        <input type="email" class="form_item_input" placeholder="例）example@gmail.com">
-      </div>
-      <div class="form_item">
-        <p class="form_item_label">お問い合わせ内容</p>
-        <textarea class="form_item_textarea"></textarea>
-      </div>
-      <input type="submit" class="form_btn" value="送信">
+    <div class="form-field">
+      <section class="form" id="form">
+        <div class="form_title">
+          <h3>お問い合わせ</h3>
+        </div>
+        <div class="form_item">
+          <div class="form_item_label">
+            <p>名前</p>
+          </div>
+          <div class="form_item_input_field">
+            <input type="text" class="form_item_input" style="height:30px;" placeholder="例）山田太郎">
+          </div>
+        </div>
+        <div class="form_item">
+          <div class="form_item_label">
+            <p>メールアドレス</p>
+          </div>
+          <div class="form_item_input_field">
+            <input class="form_item_input" style="height:30px;" placeholder="例）example@gmail.com">
+          </div>
+        </div>
+        <div class="form_item">
+          <div class="form_item_label">
+            <p>お問い合わせ内容</p>
+          </div>
+          <div class="form_item_input_field">
+            <textarea class="form_item_input_textarea" style="height:100px;" placeholder="例）ここに入力してください"></textarea>
+          </div>
+        </div>
+        <div class="btn_field">
+          <input type="submit" class="submit_btn" value="送信">
+        </div>
     </div>
-
-    <div class="bottom_menu">
-
+    <div class="adjustment_box"></div>
     </div>
-
   </main>
+
   <footer>
     <div class="bottom_menu">
       <div class="logo">
-        <img src="img/cat_logo.webp" width="50px" height="50px">
+          <picture>
+            <source srcset="img/cat_logo.webp" media="(max-width:1024px)">
+            <img src="img/cat_logo.webp" width="100px" height="100px">
+          </picture>
       </div>
       <nav class="nav_menu">
         <ul class="menu_list">
@@ -158,6 +234,9 @@
           <li class="bottom_menu_item">menu8</li>
         </ul>
       </nav>
+    </div>
+    <div class="copy_right">
+      <p><span>Copyright</span> © 2021 wtnb36 <span>All Rights Reserved.</span></p>
     </div>
   </footer>
 </body>
